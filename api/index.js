@@ -3,7 +3,6 @@
 
 const {
 	InteractionResponseType,
-	InteractionResponseFlags,
 	InteractionType,
 	verifyKey,
 } = require("discord-interactions");
@@ -12,15 +11,15 @@ const {
 	reportChatInput,
 	messageReportContextMenu
 } = require("../commandsData.js");
-const { ApplicationCommandTypes,
+const {
+	ApplicationCommandTypes,
 	EmbedLimits,
-	ResponseStatusTypes
 } = require("../constants.js");
 const getRawBody = require("raw-body");
 const i18next = require("i18next");
 const I18NexFsBackend = require("i18next-fs-backend");
 const { sendWebhook } = require("../sendWebhook.js");
-const { editResponse } = require("../editResponse.js");
+const { sendResponse } = require("../sendResponse.js");
 const info = require("../package.json");
 const { join, parse, resolve } = require("path");
 const fs = require("fs");
@@ -90,41 +89,32 @@ module.exports = async (request, response) => {
 			});
 		}
 		else if (interaction.type === InteractionType.APPLICATION_COMMAND) {
-			const { locale, guild_locale, member, data, token } = interaction;
+			const { locale, guild_locale, member, data } = interaction;
 			const guild_id = process.env.GUILD_ID;
 			const user = member.user;
 			const guildLocale = guild_locale ? i18next.getFixedT(guild_locale) : "";
 			const userLocale = i18next.getFixedT(locale);
-
-			// Deferring interaction
-			response.status(ResponseStatusTypes.Success).send({
-				type: InteractionResponseType.DEFERRED_CHANNEL_MESSAGE_WITH_SOURCE,
-				data: {
-					content: userLocale("waiting"),
-					flags: InteractionResponseFlags.EPHEMERAL,
-				}
-			});
 
 			// Handling chat input commands
 			if (data.type === ApplicationCommandTypes.ChatInput) {
 				switch (data.name.toLowerCase()) {
 				// Chat input about command
 				case about.name.toLowerCase(): {
-					await editResponse(token, userLocale("aboutMessage", {
+					await sendResponse(response, userLocale("aboutMessage", {
 						interpolation: {
 							escapeValue:false
 						},
 						name: info.name,
 						version: info.version,
 						license: info.license,
-						code: info.repository,
+						code: info.repository.url,
 					}));
 					break;
 				}
 				// Chat input report user command
 				case reportChatInput.name.toLowerCase(): {
 					const webhookUrl = process.env.WEBHOOK_LINK;
-					if (!webhookUrl) return editResponse(token, userLocale("errors:noWebhook"));
+					if (!webhookUrl) return sendResponse(response, userLocale("errors:noWebhook"));
 
 					if (data.options[0].name === "user") {
 						const subOptions = data.options[0].options;
@@ -141,12 +131,12 @@ module.exports = async (request, response) => {
 						const embeds = [{ description: description.join("\n") }, ...evidence];
 						const send = await sendWebhook(user, webhookUrl, embeds);
 						if (send.ok) {
-							await editResponse(token, userLocale("reportSuccess"));
+							await sendResponse(response, userLocale("reportSuccess"));
 						}
 						else {
 							const text = await send.text();
 							console.error(text);
-							await editResponse(token, userLocale("errors:general", { message: text }));
+							await sendResponse(response, userLocale("errors:general", { message: text }));
 						}
 						break;
 					}
@@ -166,23 +156,23 @@ module.exports = async (request, response) => {
 						const embeds = [{ description: description.join("\n") }, ...evidence];
 						const send = await sendWebhook(user, webhookUrl, embeds);
 						if (send.ok) {
-							await editResponse(token, userLocale("reportSuccess"));
+							await sendResponse(response, userLocale("reportSuccess"));
 						}
 						else {
 							const text = await send.text();
-							await editResponse(token, userLocale("errors:general", { message: text }));
+							await sendResponse(response, userLocale("errors:general", { message: text }));
 						}
 						break;
 					}
 					else {
 						console.log("Unknown Command");
-						await editResponse(token, userLocale("errors:noCommand"));
+						await sendResponse(response, userLocale("errors:noCommand"));
 						break;
 					}
 				}
 				default: {
 					console.log("Unknown Command");
-					await editResponse(token, userLocale("errors:noCommand"));
+					await sendResponse(response, userLocale("errors:noCommand"));
 					break;
 				}
 				}
@@ -193,7 +183,7 @@ module.exports = async (request, response) => {
 				// Report message context menu command
 				case (messageReportContextMenu.name.toLowerCase()): {
 					const webhookUrl = process.env.WEBHOOK_LINK;
-					if (!webhookUrl) return editResponse(token, userLocale("errors:noWebhook"));
+					if (!webhookUrl) return sendResponse(response, userLocale("errors:noWebhook"));
 
 					const message = Object.values(data.resolved.messages)[0];
 					let attachments = message.attachments.map(key => {if (key.content_type.includes("image")) return { image: { url: key.url } };});
@@ -207,25 +197,25 @@ module.exports = async (request, response) => {
 					const embeds = [{ description: description.join("\n") }, ...attachments];
 					const send = await sendWebhook(user, webhookUrl, embeds);
 					if (send.ok) {
-						await editResponse(token, userLocale("reportSuccess"));
+						await sendResponse(response, userLocale("reportSuccess"));
 					}
 					else {
 						const text = await send.text();
 						console.error(text);
-						await editResponse(token, userLocale("errors:general", { message: text }));
+						await sendResponse(response, userLocale("errors:general", { message: text }));
 					}
 					break;
 				}
 				default: {
 					console.log("Unknown Command");
-					await editResponse(token, userLocale("errors:noCommand"));
+					await sendResponse(response, userLocale("errors:noCommand"));
 					break;
 				}
 				}
 			}
 			else {
 				console.log("Unknown Type");
-				await editResponse(token, userLocale("errors:noCommand"));
+				await sendResponse(response, userLocale("errors:noCommand"));
 			}
 		}
 		else {
