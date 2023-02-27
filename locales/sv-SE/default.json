@@ -1,0 +1,10 @@
+{
+"content": "Innehåll",
+"reporter": "Anmälare",
+"suspect": "Misstänkt",
+"reason": "Orsak",
+"messageLink": "Meddelandelänk",
+"waiting": "Bearbetar...",
+"reportSuccess": "Rapporterad till serverns moderator.",
+"aboutMessage": "**Namn:** {{name}}\n**Version:** {{version}}\n**Licens:** {{license}}\n**Källkod:** {{code}}\n```Översättning tillhandahållen av ChatGPT, använd GitHub för förslag.```"
+}

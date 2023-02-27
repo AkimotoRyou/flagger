@@ -1,0 +1,10 @@
+{
+"content": "Inhalt",
+"reporter": "Melder",
+"suspect": "Verdächtiger",
+"reason": "Grund",
+"messageLink": "Nachrichtenlink",
+"waiting": "Warte...",
+"reportSuccess": "Dem Server-Moderator gemeldet.",
+"aboutMessage": "**Name:** {{name}}\n**Version:** {{version}}\n**Lizenz:** {{license}}\n**Source code:** {{code}}\n```Lokalisierung bereitgestellt von ChatGPT, für Vorschläge bitte GitHub nutzen.```"
+}

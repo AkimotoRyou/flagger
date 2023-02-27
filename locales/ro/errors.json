@@ -1,0 +1,5 @@
+{
+"general": "A apărut o eroare!\n{{message}}",
+"noWebhook": "URL-ul webhook-ului nu a fost găsit.",
+"noCommand": "Comanda necunoscută."
+}

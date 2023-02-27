@@ -1,0 +1,10 @@
+{
+"content": "Sadržaj",
+"reporter": "Prijavitelj",
+"suspect": "Osumnjičenik",
+"reason": "Razlog",
+"messageLink": "Poveznica na poruku",
+"waiting": "Obrada...",
+"reportSuccess": "Prijavljeno moderatoru na serveru.",
+"aboutMessage": "**Naziv:** {{name}}\n**Verzija:** {{version}}\n**Licenca:** {{license}}\n**Izvorni kod:** {{code}}\n```Lokalizacija pružena od strane ChatGPT, koristite GitHub za prijedloge.```"
+}

@@ -1,0 +1,5 @@
+{
+"general": "Er is een fout opgetreden!\n{{message}}",
+"noWebhook": "Webhook URL niet gevonden.",
+"noCommand": "Onbekende opdracht."
+}

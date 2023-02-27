@@ -1,0 +1,5 @@
+{
+"general": "Tapahtui virhe!\n{{message}}",
+"noWebhook": "Webhook URL ei löytynyt.",
+"noCommand": "Tuntematon komento."
+}

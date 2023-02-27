@@ -1,0 +1,10 @@
+{
+"content": "내용",
+"reporter": "신고자",
+"suspect": "의심자",
+"reason": "이유",
+"messageLink": "메시지 링크",
+"waiting": "처리 중...",
+"reportSuccess": "서버 관리자에게 신고되었습니다.",
+"aboutMessage": "**이름:** {{name}}\n**버전:** {{version}}\n**라이선스:** {{license}}\n**소스 코드:** {{code}}\n```ChatGPT에 의해 제공되는 로컬라이제이션, 제안은 GitHub을 사용하세요.```"
+}

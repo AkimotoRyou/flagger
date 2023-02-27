@@ -1,0 +1,5 @@
+{
+"general": "Došlo je do pogreške!\n{{message}}",
+"noWebhook": "Webhook URL nije pronađen.",
+"noCommand": "Nepoznata naredba."
+}

@@ -1,0 +1,10 @@
+{
+"content": "Nội dung",
+"reporter": "Người báo cáo",
+"suspect": "Nghi phạm",
+"reason": "Lý do",
+"messageLink": "Liên kết tin nhắn",
+"waiting": "Đang xử lý...",
+"reportSuccess": "Đã báo cáo đến người quản lý máy chủ.",
+"aboutMessage": "**Tên:** {{name}}\n**Phiên bản:** {{version}}\n**Giấy phép:** {{license}}\n**Mã nguồn:** {{code}}\n```Được cung cấp bởi ChatGPT, sử dụng GitHub để đề xuất.```"
+}

@@ -1,0 +1,10 @@
+{
+"content": "Sisältö",
+"reporter": "Ilmoittaja",
+"suspect": "Epäilty",
+"reason": "Syy",
+"messageLink": "Viestilinkki",
+"waiting": "Käsitellään...",
+"reportSuccess": "Ilmoitus on lähetetty palvelimen moderaattorille.",
+"aboutMessage": "**Nimi:** {{name}}\n**Versio:** {{version}}\n**Lisenssi:** {{license}}\n**Lähdekoodi:** {{code}}\n```Käännös: ChatGPT, käytä GitHubia ehdotuksiin.```"
+}

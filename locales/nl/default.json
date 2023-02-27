@@ -1,0 +1,10 @@
+{
+"content": "Inhoud",
+"reporter": "Rapporteur",
+"suspect": "Verdachte",
+"reason": "Reden",
+"messageLink": "Berichtlink",
+"waiting": "Verwerken...",
+"reportSuccess": "Gerapporteerd aan servermoderator.",
+"aboutMessage": "**Naam:** {{name}}\n**Versie:** {{version}}\n**Licentie:** {{license}}\n**Broncode:** {{code}}\n```Lokalisatie verzorgd door ChatGPT, gebruik GitHub voor suggesties.```"
+}

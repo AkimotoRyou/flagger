@@ -1,0 +1,5 @@
+{
+"general": "Došlo k chybě!\n{{message}}",
+"noWebhook": "URL webhooku nenalezeno.",
+"noCommand": "Neznámý příkaz."
+}

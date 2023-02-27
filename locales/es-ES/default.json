@@ -1,0 +1,10 @@
+{
+"content": "Contenido",
+"reporter": "Reportante",
+"suspect": "Sospechoso",
+"reason": "Motivo",
+"messageLink": "Enlace del mensaje",
+"waiting": "Procesando...",
+"reportSuccess": "Informado al moderador del servidor.",
+"aboutMessage": "**Nombre:** {{name}}\n**Versión:** {{version}}\n**Licencia:** {{license}}\n**Código fuente:** {{code}}\n```Localización proporcionada por ChatGPT, utiliza GitHub para sugerencias.```"
+}

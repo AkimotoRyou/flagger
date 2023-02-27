@@ -1,0 +1,10 @@
+{
+"content": "Konten",
+"reporter": "Pelapor",
+"suspect": "Tersangka",
+"reason": "Alasan",
+"messageLink": "Tautan pesan",
+"waiting": "Sedang diproses...",
+"reportSuccess": "Dilaporkan ke moderator server.",
+"aboutMessage": "**Nama:** {{name}}\n**Versi:** {{version}}\n**Lisensi:** {{license}}\n**Kode sumber:** {{code}}\n```Lokalisasi disediakan oleh ChatGPT, gunakan GitHub untuk memberikan saran.```"
+}

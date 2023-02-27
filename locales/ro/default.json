@@ -1,0 +1,10 @@
+{
+"content": "Conținut",
+"reporter": "Raportor",
+"suspect": "Suspect",
+"reason": "Motiv",
+"messageLink": "Link mesaj",
+"waiting": "Se procesează...",
+"reportSuccess": "Raport trimis moderatoarelor serverului.",
+"aboutMessage": "**Nume:** {{name}}\n**Versiune:** {{version}}\n**Licență:** {{license}}\n**Cod sursă:** {{code}}\n```Localizarea este oferită de ChatGPT, utilizați GitHub pentru sugestii.```"
+}

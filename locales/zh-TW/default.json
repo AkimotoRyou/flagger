@@ -1,0 +1,10 @@
+{
+"content": "內容",
+"reporter": "舉報者",
+"suspect": "嫌疑人",
+"reason": "原因",
+"messageLink": "訊息連結",
+"waiting": "處理中...",
+"reportSuccess": "已向伺服器管理員舉報。",
+"aboutMessage": "**名稱：**{{name}}\n**版本：**{{version}}\n**授權：**{{license}}\n**原始碼：**{{code}}\n```本地化由 ChatGPT 提供，使用 GitHub 提出建議。```"
+}

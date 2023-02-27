@@ -1,0 +1,5 @@
+{
+"general": "Bir hata oluştu!\n{{message}}",
+"noWebhook": "Webhook URL bulunamadı.",
+"noCommand": "Bilinmeyen komut."
+}

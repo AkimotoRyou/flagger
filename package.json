@@ -1,0 +1,22 @@
+{
+	"name": "flagger",
+	"version": "1.0.0",
+	"description": "Serverless bot to report message or user to mods.",
+	"author": "AkimotoRyou",
+	"license": "AGPL-3.0",
+	"main": "api/index.js",
+	"scripts": {
+		"start": "node -r dotenv/config api/index.js",
+		"register": "node -r dotenv/config register.js",
+		"unregister": "node -r dotenv/config unregister.js",
+		"test": "echo \"Error: no test specified\" && exit 1"
+	},
+	"dependencies": {
+		"discord-interactions": "^3.3.0",
+		"dotenv": "^16.0.3",
+		"i18next": "^22.4.9",
+		"i18next-fs-backend": "^2.1.1",
+		"node-fetch": "^2.6.9",
+		"raw-body": "^2.5.2"
+	}
+}

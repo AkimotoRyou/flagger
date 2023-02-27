@@ -1,0 +1,10 @@
+{
+"content": "Tartalom",
+"reporter": "Jelentő",
+"suspect": "Gyanúsított",
+"reason": "Indok",
+"messageLink": "Üzenet linkje",
+"waiting": "Feldolgozás...",
+"reportSuccess": "Jelentés elküldve a szerver moderátorának.",
+"aboutMessage": "**Név:** {{name}}\n**Verzió:** {{version}}\n**Licenc:** {{license}}\n**Forráskód:** {{code}}\n```A fordítást a ChatGPT készítette, az ötleteket GitHub-on lehet javasolni.```"
+}

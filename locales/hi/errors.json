@@ -1,0 +1,5 @@
+{
+"general": "एक त्रुटि हुई!\n{{message}}",
+"noWebhook": "वेबहुक URL नहीं मिला।",
+"noCommand": "अज्ञात कमांड।"
+}

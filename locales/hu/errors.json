@@ -1,0 +1,5 @@
+{
+"general": "Hiba történt!\n{{message}}",
+"noWebhook": "Webhook URL nem található.",
+"noCommand": "Ismeretlen parancs."
+}

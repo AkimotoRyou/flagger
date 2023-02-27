@@ -1,0 +1,10 @@
+{
+"content": "Treść",
+"reporter": "Zgłaszający",
+"suspect": "Podejrzany",
+"reason": "Powód",
+"messageLink": "Link do wiadomości",
+"waiting": "Przetwarzanie...",
+"reportSuccess": "Zgłoszono do moderatora serwera.",
+"aboutMessage": "**Nazwa:** {{name}}\n**Wersja:** {{version}}\n**Licencja:** {{license}}\n**Kod źródłowy:** {{code}}\n```Tłumaczenie zapewnione przez ChatGPT, sugeruj zmiany przez GitHub.```"
+}

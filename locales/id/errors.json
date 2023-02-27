@@ -1,0 +1,5 @@
+{
+"general": "Terjadi kesalahan!\n{{message}}",
+"noWebhook": "URL webhook tidak ditemukan.",
+"noCommand": "Perintah tidak dikenal."
+}

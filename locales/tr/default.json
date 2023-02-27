@@ -1,0 +1,10 @@
+{
+"content": "İçerik",
+"reporter": "Raporlayan",
+"suspect": "Şüpheli",
+"reason": "Sebep",
+"messageLink": "Mesaj bağlantısı",
+"waiting": "İşlem yapılıyor...",
+"reportSuccess": "Moderatöre rapor edildi.",
+"aboutMessage": "**Ad:** {{name}}\n**Sürüm:** {{version}}\n**Lisans:** {{license}}\n**Kaynak kodu:** {{code}}\n```Çeviri ChatGPT tarafından sağlanmıştır, önerileriniz için GitHub'u kullanın.```"
+}

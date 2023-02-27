@@ -1,0 +1,5 @@
+{
+"general": "Įvyko klaida!\n{{message}}",
+"noWebhook": "Webhook URL nerasta.",
+"noCommand": "Nežinoma komanda."
+}

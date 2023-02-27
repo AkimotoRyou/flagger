@@ -1,0 +1,10 @@
+{
+"content": "Obsah",
+"reporter": "Nahlásil",
+"suspect": "Podezřelý",
+"reason": "Důvod",
+"messageLink": "Odkaz na zprávu",
+"waiting": "Zpracovávám...",
+"reportSuccess": "Nahlášeno moderátorům serveru.",
+"aboutMessage": "**Jméno:** {{name}}\n**Verze:** {{version}}\n**Licence:** {{license}}\n**Zdrojový kód:** {{code}}\n```Lokalizace poskytovaná ChatGPT, použijte GitHub pro návrhy.```"
+}

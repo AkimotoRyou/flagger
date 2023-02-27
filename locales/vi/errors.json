@@ -1,0 +1,5 @@
+{
+"general": "Đã xảy ra lỗi!\n{{message}}",
+"noWebhook": "Không tìm thấy đường dẫn Webhook.",
+"noCommand": "Lệnh không được nhận dạng."
+}

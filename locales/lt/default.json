@@ -1,0 +1,10 @@
+{
+"content": "Turinys",
+"reporter": "Pranešėjas",
+"suspect": "Įtariamasis",
+"reason": "Priežastis",
+"messageLink": "Pranešimo nuoroda",
+"waiting": "Apdorojama...",
+"reportSuccess": "Pranešta moderatoriams.",
+"aboutMessage": "**Pavadinimas:** {{name}}\n**Versija:** {{version}}\n**Licencija:** {{license}}\n**Kodas:** {{code}}\n```Lokalizacija pateikta ChatGPT, naudokite GitHub pasiūlymams.```"
+}

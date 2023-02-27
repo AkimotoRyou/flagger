@@ -1,0 +1,10 @@
+{
+"content": "内容",
+"reporter": "報告者",
+"suspect": "被疑者",
+"reason": "理由",
+"messageLink": "メッセージリンク",
+"waiting": "処理中...",
+"reportSuccess": "サーバー管理者に報告されました。",
+"aboutMessage": "**名前：** {{name}}\n**バージョン：** {{version}}\n**ライセンス：** {{license}}\n**ソースコード：** {{code}}\n```ChatGPTによるローカライズ。提案はGitHubで受け付けています。```"
+}

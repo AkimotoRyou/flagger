@@ -1,0 +1,10 @@
+{
+"content": "Indhold",
+"reporter": "Rapportør",
+"suspect": "Mistænkt",
+"reason": "Årsag",
+"messageLink": "Beskedlink",
+"waiting": "Behandler...",
+"reportSuccess": "Rapporteret til server moderator.",
+"aboutMessage": "**Navn:** {{name}}\n**Version:** {{version}}\n**Licens:** {{license}}\n**Kildekode:** {{code}}\n```Lokalisering leveret af ChatGPT, brug GitHub for forslag.```"
+}
