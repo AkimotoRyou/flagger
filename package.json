@@ -18,5 +18,8 @@
 		"i18next-fs-backend": "^2.1.1",
 		"node-fetch": "^2.6.9",
 		"raw-body": "^2.5.2"
+	},
+	"repository": {
+		"url": "https://github.com/AkimotoRyou/flagger"
 	}
 }
